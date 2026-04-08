@@ -64,12 +64,6 @@
             text-transform: uppercase;
             margin-bottom: 16px;
         }
-        .hero p {
-            font-size: 13px;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            color: #888;
-        }
         .hero .scroll-hint {
             position: absolute;
             bottom: 40px;
@@ -81,41 +75,26 @@
 
         /* ── GALLERY ── */
         .gallery {
-            max-width: 1280px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 80px 48px 120px;
         }
-        .gallery-header {
-            text-align: center;
-            margin-bottom: 64px;
-        }
-        .gallery-header h2 {
-            font-size: 13px;
-            font-weight: 400;
-            letter-spacing: 4px;
-            text-transform: uppercase;
-            color: #888;
-        }
 
         .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 2fr);
-            gap: 10px;
+            columns: 2;
+            column-gap: 24px;
         }
         .gallery-item {
             position: relative;
             overflow: hidden;
-            aspect-ratio: 4 / 3;
             background: #f5f5f5;
-        }
-        .gallery-item.tall {
-            aspect-ratio: 3 / 4;
-            grid-row: span 2;
+            margin-bottom: 24px;
+            break-inside: avoid;
         }
         .gallery-item img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: auto;
+            display: block;
             transition: transform 0.6s ease;
         }
         .gallery-item:hover img {
@@ -133,15 +112,8 @@
             transition: opacity 0.4s ease;
         }
         .gallery-item:hover .caption { opacity: 1; }
-        .caption h3 {
-            font-size: 13px;
-            font-weight: 400;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
         .caption p {
             font-size: 11px;
-            margin-top: 4px;
             opacity: 0.7;
         }
 
@@ -216,8 +188,7 @@
             nav .nav-links a { margin-left: 20px; font-size: 11px; }
             .hero h1 { font-size: 28px; letter-spacing: 8px; }
             .gallery { padding: 60px 24px 80px; }
-            .gallery-grid { grid-template-columns: 1fr; gap: 16px; }
-            .gallery-item.tall { grid-row: span 1; aspect-ratio: 3/2; }
+            .gallery-grid { columns: 1; column-gap: 16px; }
             .about { padding: 60px 24px 80px; }
             .contact { padding: 60px 24px 80px; }
             .contact a { font-size: 18px; }
@@ -246,69 +217,69 @@
 <section class="gallery" id="portfolio">
     <div class="gallery-grid">
 
-        <!-- BILD 1 – Hochformat -->
-        <div class="gallery-item tall">
+        <!-- BILD 1 -->
+        <div class="gallery-item">
             <img src="vip.jpg" alt="VIP">
             <div class="caption">
-                <p>2026 · Ort</p>
+                <p>2026 · Düsseldorf</p>
             </div>
         </div>
 
-        <!-- BILD 2 – Hochformat -->
-        <div class="gallery-item tall">
+        <!-- BILD 2 -->
+        <div class="gallery-item">
             <img src="passing-by.jpg" alt="passing by">
             <div class="caption">
-                <p>2026 · Ort</p>
+                <p>2026 · Düsseldorf</p>
             </div>
         </div>
 
-        <!-- BILD 3 – Hochformat -->
-        <div class="gallery-item tall">
+        <!-- BILD 3 -->
+        <div class="gallery-item">
             <img src="always-on.jpg" alt="always on">
             <div class="caption">
-                <p>2026 · Ort</p>
+                <p>2026 · Düsseldorf</p>
             </div>
         </div>
 
-        <!-- BILD 4 – Hochformat -->
-        <div class="gallery-item tall">
+        <!-- BILD 4 -->
+        <div class="gallery-item">
             <img src="lupo-geht-immer.jpg" alt="lupo geht immer">
             <div class="caption">
-                <p>2026 · Ort</p>
+                <p>2026 · Düsseldorf</p>
             </div>
         </div>
 
-        <!-- BILD 5 – Hochformat -->
-        <div class="gallery-item tall">
+        <!-- BILD 5 -->
+        <div class="gallery-item">
             <img src="auf-dem-weg-nach-unten.jpg" alt="auf dem weg nach unten">
             <div class="caption">
-                <p>2026 · Ort</p>
+                <p>2026 · Düsseldorf</p>
             </div>
         </div>
 
-        <!-- BILD 6 – Hochformat -->
-        <div class="gallery-item tall">
+        <!-- BILD 6 -->
+        <div class="gallery-item">
             <img src="kichplatz-U-headsphones-reflect.jpg" alt="headphones reflect">
             <div class="caption">
-                <p>2026 · Ort</p>
+                <p>2026 · Düsseldorf</p>
             </div>
         </div>
 
     </div>
 </section>
 
-<!-- ── ÜBER MICH ── -->
+<!-- ── ÜBER ── -->
 <section class="about" id="ueber">
     <h2>Über</h2>
     <p>
-        Bisschen was aus Düsseldorf.
+       Bisschen was aus Düsseldorf
     </p>
 </section>
 
 <!-- ── KONTAKT ── -->
 <section class="contact" id="kontakt">
     <h2>Kontakt</h2>
-    <a href="mailto:bilkandwhite@gmail.com">bilkandwhite@gmail.com</a>
+    <a href="mailto:bilkandwhite@gmail.com</a>
 </section>
 
 <!-- ── FOOTER ── -->
