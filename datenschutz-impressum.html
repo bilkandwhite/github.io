@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutz &amp; Impressum — Bilk&amp;WHITE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --brand-primary: #000000;
+            --brand-text: #000000;
+            --brand-text-subtle: #555555;
+            --brand-bg: #ffffff;
+            --brand-page-bg: #ffffff;
+            --brand-border: #e0e0e0;
+            --font-heading: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            --font-body: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+            --side-padding: 48px;
+        }
+
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--brand-bg);
+            color: var(--brand-text);
+            line-height: 1.6;
+        }
+
+        ::selection {
+            background: var(--brand-primary);
+            color: var(--brand-bg);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            z-index: 1000;
+            padding: 0 var(--side-padding);
+            height: 64px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--brand-border);
+        }
+
+        .logo a {
+            font-family: var(--font-heading);
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--brand-text);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .logo a:hover {
+            opacity: 0.6;
+        }
+
+        .back-link {
+            font-family: var(--font-body);
+            font-size: 13px;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--brand-text);
+            text-decoration: none;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.6;
+        }
+
+        /* Content */
+        main {
+            max-width: 640px;
+            margin: 0 auto;
+            padding: 140px var(--side-padding) 120px;
+        }
+
+        h1 {
+            font-family: var(--font-heading);
+            font-size: clamp(24px, 3vw, 36px);
+            font-weight: 300;
+            letter-spacing: 6px;
+            text-transform: uppercase;
+            color: var(--brand-text);
+            margin-bottom: 60px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: var(--font-heading);
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--brand-text);
+            margin-top: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-family: var(--font-body);
+            font-size: 16px;
+            font-weight: 300;
+            line-height: 1.9;
+            color: var(--brand-text-subtle);
+            margin-bottom: 16px;
+        }
+
+        a {
+            color: var(--brand-text);
+            transition: opacity 0.3s ease;
+        }
+
+        a:hover {
+            opacity: 0.6;
+        }
+
+        .divider {
+            border: none;
+            border-top: 1px solid var(--brand-border);
+            margin: 60px 0;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px var(--side-padding);
+            border-top: 1px solid var(--brand-border);
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 12px;
+            font-weight: 300;
+            color: var(--brand-text-subtle);
+            letter-spacing: 1px;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            :root {
+                --side-padding: 20px;
+            }
+            nav {
+                padding: 0 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo"><a href="index.html">Bilk&amp;WHITE</a></div>
+        <a href="index.html" class="back-link">← Zurück</a>
+    </nav>
+
+    <main>
+        <h1>Datenschutz &amp; Impressum</h1>
+
+        <!-- ═══════════════════════════════════════
+             IMPRESSUM
+             Bitte mit deinen eigenen Daten ersetzen.
+        ═══════════════════════════════════════ -->
+        <h2>Impressum</h2>
+        <p>
+            Bilk&amp;WHITE<br>
+            Vorname Nachname<br>
+            Straße Nr.<br>
+            PLZ Ort
+        </p>
+        <p>
+            E-Mail: <a href="mailto:bilkandwhite@gmail.com">bilkandwhite@gmail.com</a>
+        </p>
+
+        <hr class="divider">
+
+        <!-- ═══════════════════════════════════════
+             DATENSCHUTZ
+             Bitte an deine Gegebenheiten anpassen.
+        ═══════════════════════════════════════ -->
+        <h2>Datenschutz</h2>
+
+        <p>
+            Der Schutz deiner persönlichen Daten ist uns wichtig.
+            Nachfolgend informieren wir dich über die Erhebung und
+            Verwendung personenbezogener Daten beim Besuch dieser Website.
+        </p>
+
+        <h2>Verantwortlicher</h2>
+        <p>
+            Verantwortlich im Sinne der DSGVO ist die im Impressum
+            genannte Person.
+        </p>
+
+        <h2>Hosting</h2>
+        <p>
+            Diese Website wird bei [Hosting-Anbieter eintragen] gehostet.
+            Beim Aufruf dieser Website werden durch den Hosting-Anbieter
+            automatisch Informationen in sogenannten Server-Log-Dateien
+            gespeichert, die dein Browser automatisch übermittelt
+            (IP-Adresse, Browsertyp, Betriebssystem, Referrer-URL,
+            Zeitpunkt des Zugriffs). Diese Daten werden nicht mit
+            anderen Datenquellen zusammengeführt.
+        </p>
+
+        <h2>Cookies</h2>
+        <p>
+            Diese Website verwendet keine Cookies.
+        </p>
+
+        <h2>Kontaktaufnahme</h2>
+        <p>
+            Bei der Kontaktaufnahme per E-Mail werden die von dir
+            mitgeteilten Daten (E-Mail-Adresse, ggf. Name und
+            Nachrichteninhalt) zur Bearbeitung der Anfrage gespeichert.
+            Diese Daten werden nicht ohne deine Einwilligung weitergegeben.
+        </p>
+
+        <h2>Deine Rechte</h2>
+        <p>
+            Du hast das Recht auf Auskunft, Berichtigung, Löschung,
+            Einschränkung der Verarbeitung, Datenübertragbarkeit und
+            Widerspruch. Wende dich dazu an die im Impressum genannte
+            Kontaktadresse.
+        </p>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Bilk&amp;WHITE. Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body>
+</html>
